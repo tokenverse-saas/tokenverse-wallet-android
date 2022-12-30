@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tokenverse_default">#5aabbe</color>
+    <color name="button_default">#5aabbe</color>
+    <color name="header_default">#5aabbe</color>
+    <color name="neutral_darker">#5F6872</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red_connectify">#EB1F5D</color>
+    <color name="dark_background">#2F3032</color>
+    <color name="button_pressed_default">#007e9c</color>
+    <color name="signin_info_background_light">#FFFFFF</color>
+    <color name="signin_info_background_dark">#2F3032</color>
+</resources>

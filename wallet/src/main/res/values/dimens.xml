@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="padd_10">10dp</dimen>
+    <dimen name="popup_width">300dp</dimen>
+    <dimen name="popup_height">310dp</dimen>
+    <dimen name="popup_width_signin_info">350dp</dimen>
+    <dimen name="popup_default_padding">16dp</dimen>
+    <dimen name="popup_default_margin">16dp</dimen>
+</resources>

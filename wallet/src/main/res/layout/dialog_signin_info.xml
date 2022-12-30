@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/popup_width_signin_info"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="24dp"
+    android:id="@+id/dialog_layout_signin_info">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_signin_info">
+
+        <RelativeLayout
+            android:id="@+id/layout_header_signin_info"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_close_signin_info"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                app:srcCompat="@drawable/ic_close_white_24dp" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_icon_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/layout_header_signin_info"
+            app:srcCompat="@drawable/ic_logo"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/img_icon_logo"
+            android:layout_toRightOf="@id/img_icon_logo"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_icon_logo">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signin_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/popup_default_margin"
+                android:layout_marginEnd="@dimen/popup_default_margin"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingBottom="@dimen/popup_default_padding"
+                android:text="Proin finibus nibh ac augue posuere ultrices vivamus vestibulum blandit"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_phone_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/popup_default_margin"
+                android:layout_marginEnd="@dimen/popup_default_margin"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/popup_default_padding">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/signin_info_login_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:srcCompat="@drawable/ic_baseline_lock_24" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/signin_info_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingStart="16dp"
+                    android:text="Your phone or email will be used sign-up and login."
+                    android:textAlignment="textStart"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_safe_guarded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/popup_default_margin"
+                android:layout_marginEnd="@dimen/popup_default_margin"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/popup_default_padding">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/signin_info_guard_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:srcCompat="@drawable/ic_baseline_guard_24" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/signin_info_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingStart="16dp"
+                    android:text="Your founds will be safeguarded by security compliant services."
+                    android:textAlignment="textStart"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_action_continue"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginStart="@dimen/popup_default_padding"
+                android:layout_marginEnd="@dimen/popup_default_padding"
+                android:background="@drawable/btn_default_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text="Continue"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signin_info_policies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="By continuing, you agree to Tokenverse's Terms of Service, Privacy Policy and Cookie Policy."
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/signin_info_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Don't show this screen again"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:buttonTint="@color/button_default"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

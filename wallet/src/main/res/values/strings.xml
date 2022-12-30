@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tokenverse Sample</string>
+    <string name="error">error</string>
+    <string name="success">success</string>
+
+    <string name="signin_info_title">This app enables authentication using Tokenverse Wallet</string>
+    <string name="signin_info_login">Your phone or email will be used sign-up and login.</string>
+    <string name="signin_info_policies">By continuing, you agree to Tokenverse\'s Terms of Service, Privacy Policy and Cookie Policy.</string>
+    <string name="signin_info_security">Your founds will be safeguarded by security compliant services.</string>
+    <string name="signin_info_continue_button">Continue</string>
+    <string name="signin_info_checkbox">Don\'t show this screen again</string>
+</resources>
