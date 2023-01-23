@@ -9,4 +9,22 @@
     <string name="signin_info_security">Your founds will be safeguarded by security compliant services.</string>
     <string name="signin_info_continue_button">Continue</string>
     <string name="signin_info_checkbox">Don\'t show this screen again</string>
+
+    <string name="signup_email_address">Input your e-mail</string>
+    <string name="signup_email_invalid">Invalid e-mail</string>
+    <string name="signup_password">Input your password</string>
+    <string name="signup_secured">Secured by Tokenverse</string>
+    <string name="signup_title">Connect via Tokenverse</string>
+    <string name="signup_subtitle">to continue using this app</string>
+    <string name="signup_button">Sign up</string>
+    <string name="signup_login_button">or Log in</string>
+    <string name="signup_password_chars">10+ chars</string>
+    <string name="signup_password_uppercase">Uppercase</string>
+    <string name="signup_password_lowercase">Lowercase</string>
+    <string name="signup_password_number">Number</string>
+
+    <string name="forgot_password_title">Forgot your password?</string>
+    <string name="forgot_password_subtitle">We`ll mail you a verification code</string>
+    <string name="forgot_password_email">Type your email address</string>
+    <string name="forgot_password_continue">Continue</string>
 </resources>

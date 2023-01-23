@@ -9,4 +9,22 @@
     <string name="signin_info_policies">Ao continuar, você concorda com os Termos de Serviço, Política de Privacidade e Política de Cookies do Tokenverse.</string>
     <string name="signin_info_continue_button">Continuar</string>
     <string name="signin_info_checkbox">Não exibir essa tela novamente</string>
+
+    <string name="signup_email_address">Digite seu e-mail</string>
+    <string name="signup_email_invalid">E-mail inválido</string>
+    <string name="signup_password">Digite sua senha</string>
+    <string name="signup_secured">Protegido por Tokenverse</string>
+    <string name="signup_title">Conecte-se via Tokenverse</string>
+    <string name="signup_subtitle">para continuar usando este aplicativo</string>
+    <string name="signup_button">Cadastrar</string>
+    <string name="signup_login_button">ou Entrar</string>
+    <string name="signup_password_chars">10+ caracteres</string>
+    <string name="signup_password_uppercase">Maiúscula</string>
+    <string name="signup_password_lowercase">Minúscula</string>
+    <string name="signup_password_number">Número</string>
+
+    <string name="forgot_password_title">Esqueceu sua senha?</string>
+    <string name="forgot_password_subtitle">Enviaremos um código de verificação</string>
+    <string name="forgot_password_email">Digite seu e-mail</string>
+    <string name="forgot_password_continue">Continuar</string>
 </resources>

@@ -5,4 +5,5 @@
     <dimen name="popup_width_signin_info">350dp</dimen>
     <dimen name="popup_default_padding">16dp</dimen>
     <dimen name="popup_default_margin">16dp</dimen>
+    <dimen name="btn_default_height">56dp</dimen>
 </resources>
