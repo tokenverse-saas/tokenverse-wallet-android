@@ -39,9 +39,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             R.id.btn_forgot_password -> {
-                /*val headerColor = ContextCompat.getColor(this, R.color.dialogHeaderColor)
-                val buttonColor = ContextCompat.getColor(this, R.color.dialogHeaderColor)
-
                 WalletDialog.Builder(this, WalletDialogStyle.FORGOT_PASSWORD, WalletDialogType.INFO)
                     .setDarkMode(rbDark.isChecked)
                     .setAnimation(WalletDialogAnimation.DEFAULT)
@@ -50,11 +47,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                             dialog.dismiss()
                         }
                     })
-                    .show()*/
+                    .show()
             }
 
             R.id.btn_signup -> {
                 WalletDialog.Builder(this, WalletDialogStyle.SIGNIN_EMAIL, WalletDialogType.INFO)
+                    .setDarkMode(rbDark.isChecked)
+                    .setAnimation(WalletDialogAnimation.DEFAULT)
+                    .setOnClickListener(object : WalletDialogOnClickListener {
+                        override fun onClick(dialog: WalletDialog.Builder) {
+                            dialog.dismiss()
+                        }
+                    })
+                    .show()
+            }
+
+            R.id.btn_login -> {
+                WalletDialog.Builder(this, WalletDialogStyle.LOGIN, WalletDialogType.INFO)
                     .setDarkMode(rbDark.isChecked)
                     .setAnimation(WalletDialogAnimation.DEFAULT)
                     .setOnClickListener(object : WalletDialogOnClickListener {

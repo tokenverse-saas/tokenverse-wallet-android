@@ -84,7 +84,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/btn_selector"
-                android:text="Show Sign Up"
+                android:text="Forgot password"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_selector"
+                android:text="Login"
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 android:layout_marginBottom="10dp"

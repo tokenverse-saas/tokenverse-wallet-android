@@ -3,8 +3,10 @@
     <string name="error">error</string>
     <string name="success">success</string>
 
+    <string name="secured_by_tokenverse">Secured by Tokenverse</string>
+
     <string name="signin_info_title">This app enables authentication using Tokenverse Wallet</string>
-    <string name="signin_info_login">Your phone or email will be used sign-up and login.</string>
+    <string name="signin_info_login">You will use your e-mail to sign up and login.</string>
     <string name="signin_info_policies">By continuing, you agree to Tokenverse\'s Terms of Service, Privacy Policy and Cookie Policy.</string>
     <string name="signin_info_security">Your founds will be safeguarded by security compliant services.</string>
     <string name="signin_info_continue_button">Continue</string>
@@ -13,7 +15,6 @@
     <string name="signup_email_address">Input your e-mail</string>
     <string name="signup_email_invalid">Invalid e-mail</string>
     <string name="signup_password">Input your password</string>
-    <string name="signup_secured">Secured by Tokenverse</string>
     <string name="signup_title">Connect via Tokenverse</string>
     <string name="signup_subtitle">to continue using this app</string>
     <string name="signup_button">Sign up</string>
@@ -27,4 +28,6 @@
     <string name="forgot_password_subtitle">We`ll mail you a verification code</string>
     <string name="forgot_password_email">Type your email address</string>
     <string name="forgot_password_continue">Continue</string>
+
+    <string name="login_title">Loging in via e-mail</string>
 </resources>

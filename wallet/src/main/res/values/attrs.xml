@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SecuredInfoView">
+        <attr name="securedText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="HeaderView">
+        <attr name="headerColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IconTextListItemView">
+        <attr name="icon"/>
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckboxTextView">
+        <attr name="checkboxTextAlignment" format="string"/>
+        <attr name="checkboxColor" format="color" />
+        <attr name="checkboxText" format="string" />
+    </declare-styleable>
+</resources>

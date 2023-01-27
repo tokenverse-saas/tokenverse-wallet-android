@@ -3,6 +3,8 @@
     <string name="error">error</string>
     <string name="success">success</string>
 
+    <string name="secured_by_tokenverse">Protegido por Tokenverse</string>
+
     <string name="signin_info_title">Este app habilita autenticação utilizando Tokenverse Wallet</string>
     <string name="signin_info_login">Seu telefone ou email pode ser usado para realizar login.</string>
     <string name="signin_info_security">Seus fundos estão guardados de forma segura.</string>
@@ -13,7 +15,6 @@
     <string name="signup_email_address">Digite seu e-mail</string>
     <string name="signup_email_invalid">E-mail inválido</string>
     <string name="signup_password">Digite sua senha</string>
-    <string name="signup_secured">Protegido por Tokenverse</string>
     <string name="signup_title">Conecte-se via Tokenverse</string>
     <string name="signup_subtitle">para continuar usando este aplicativo</string>
     <string name="signup_button">Cadastrar</string>
@@ -27,4 +28,6 @@
     <string name="forgot_password_subtitle">Enviaremos um código de verificação</string>
     <string name="forgot_password_email">Digite seu e-mail</string>
     <string name="forgot_password_continue">Continuar</string>
+
+    <string name="login_title">Entrar com e-mail</string>
 </resources>

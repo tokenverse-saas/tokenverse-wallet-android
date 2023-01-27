@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Tokenverse Sample"
 include ':app'
 include ':wallet'
+include ':tokenverse-core'

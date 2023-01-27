@@ -8,60 +8,36 @@
     android:gravity="center"
     app:cardElevation="8dp"
     app:cardCornerRadius="24dp"
-    android:id="@+id/dialog_layout_signin">
+    android:id="@+id/cdLogin">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main_signin"
+        android:id="@+id/main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:id="@+id/layout_header_signin"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:gravity="center_vertical"
+        <com.tokenverse.wallet.uikit.HeaderView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/headerView"
+            app:headerColor="@color/header_default"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/image_close_signin"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="15dp"
-                app:srcCompat="@drawable/ic_close_white_24dp" />
-        </RelativeLayout>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_icon_logo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="30dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/layout_header_signin"
-            app:srcCompat="@drawable/ic_logo" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_toEndOf="@id/img_icon_logo"
-            android:layout_toRightOf="@id/img_icon_logo"
+            android:layout_toEndOf="@id/headerView"
+            android:layout_toRightOf="@id/headerView"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_icon_logo">
+            app:layout_constraintTop_toBottomOf="@+id/headerView">
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/signin_title"
+                android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -71,19 +47,6 @@
                 android:gravity="center"
                 android:textSize="22dp"
                 android:textStyle="bold" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/signin_subtitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="@dimen/popup_default_margin"
-                android:layout_marginEnd="@dimen/popup_default_margin"
-                android:ellipsize="end"
-                android:gravity="center"
-                android:maxLines="2"
-                android:paddingBottom="@dimen/popup_default_padding"
-                android:textSize="16dp" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/layout_phone_email"
@@ -133,96 +96,6 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/layout_safe_guarded"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"
-                android:layout_marginStart="@dimen/popup_default_margin"
-                android:layout_marginEnd="@dimen/popup_default_margin"
-                android:orientation="horizontal"
-                android:paddingBottom="@dimen/popup_default_padding">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:gravity="center"
-                    app:srcCompat="@drawable/ic_check_circle_outline"
-                    android:id="@+id/icon_10_chars"/>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginEnd="6dp"
-                    android:ellipsize="end"
-                    android:textAlignment="center"
-                    android:gravity="center"
-                    android:maxLines="1"
-                    android:paddingBottom="@dimen/popup_default_padding"
-                    android:textSize="11dp"
-                    android:id="@+id/signup_password_chars"/>
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:gravity="center"
-                    app:srcCompat="@drawable/ic_check_circle_outline"
-                    android:id="@+id/icon_uppercase"/>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginEnd="6dp"
-                    android:ellipsize="end"
-                    android:gravity="center"
-                    android:maxLines="1"
-                    android:paddingBottom="@dimen/popup_default_padding"
-                    android:id="@+id/signup_password_uppercase"
-                    android:textSize="11dp"/>
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:gravity="center"
-                    app:srcCompat="@drawable/ic_check_circle_outline"
-                    android:id="@+id/icon_lowercase"/>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginEnd="6dp"
-                    android:ellipsize="end"
-                    android:gravity="center"
-                    android:maxLines="1"
-                    android:paddingBottom="@dimen/popup_default_padding"
-                    android:id="@+id/signup_password_lowercase"
-                    android:textSize="11dp"/>
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:gravity="center"
-                    app:srcCompat="@drawable/ic_check_circle_outline"
-                    android:id="@+id/icon_number"/>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="6dp"
-                    android:ellipsize="end"
-                    android:gravity="center"
-                    android:maxLines="2"
-                    android:paddingBottom="@dimen/popup_default_padding"
-                    android:id="@+id/signup_password_number"
-                    android:textSize="11dp"/>
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_action_signup"
                 android:layout_width="match_parent"
@@ -236,47 +109,12 @@
                 android:orientation="horizontal"
                 android:textColor="@color/white" />
 
-            <Button
-                android:id="@+id/btn_action_login"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/btn_default_height"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
-                android:layout_marginStart="@dimen/popup_default_padding"
-                android:layout_marginEnd="@dimen/popup_default_padding"
-                android:textAllCaps="false"
-                />
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
+            <com.tokenverse.wallet.uikit.SecuredInfoView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:layout_margin="16dp">
+                app:securedText="@string/secured_by_tokenverse">
 
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:maxLines="1"
-                    android:textSize="12dp"
-                    android:layout_marginEnd="8dp"
-                    android:id="@+id/signup_secured_info"/>
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_logo" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
+            </com.tokenverse.wallet.uikit.SecuredInfoView>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
